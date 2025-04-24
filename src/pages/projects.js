@@ -58,20 +58,20 @@ const Projects = () => {
         "Full-featured online store with product catalog, cart, and checkout system built with Next.js, Redux Toolkit, and Node.js. Implemented secure payment gateways, product filtering, and admin dashboard for inventory management.",
       tags: ["Next.js", "Redux Toolkit", "Node.js", "MongoDB", "Material UI"],
       github: "#",
-      live: "#",
-      image: "/ecommerce.jpg",
+      live: "https://aranya.com.bd/",
+      image: "/aranya.png",
     },
     {
       id: 2,
-      title: "Mave CMS: A headless CMS solution for dynamic websites",
+      title: "Reserved: A booking system Mobile Application.",
       shortDescription:
-        "Developed front end for the CMS, enabling API generation for dynamic websites...",
+        "A comprehensive booking system mobile application developed for EtherTech, featuring both salon and hotel booking functionalities...",
       fullDescription:
-        "Developed front end for the CMS, enabling API generation for dynamic websites, allowing users to effortlessly manage their website front end. Empowered users to build custom websites with a headless CMS. Next.js and Ant Design used to build the foundation for a seamless user experience. Craft unique pages, menus, and interactive components (cards, sliders, forms, etc.) for a truly personalized online presence.",
-      tags: ["Next.js", "Context API", "Material UI"],
+        "The app provides users with detailed information on available services, real-time booking capabilities, and reservation management. Key features include integrated salon and hotel listings, dynamic scheduling, personalized booking recommendations, secure payment options, and push notifications for upcoming appointments. Additionally, the app allows businesses to manage availability, track bookings, and generate reports, making it a robust solution for both customers and service providers",
+      tags: ["React Native", "Context API", "Expo", "CLI", "Tailwind CSS"],
       github: "#",
-      live: "#",
-      image: "/taskapp.jpg",
+      live: "https://play.google.com/store/apps/details?id=com.ethertech.ryserved_frontend&pcampaignid=web_share",
+      image: "/Cover.png",
     },
     // ... other projects
   ];
@@ -98,10 +98,19 @@ const Projects = () => {
                 >
                   <div className="flex flex-col md:flex-row">
                     {/* Project Image */}
-                    <div className="md:w-1/3 bg-gray-100 dark:bg-gray-800 h-48 md:h-auto">
-                      <div className="w-full h-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
-                        <span className="text-gray-500 dark:text-gray-400">
-                          Project Image
+                    <div className="md:w-1/3 bg-gray-100 dark:bg-gray-800 h-48 md:h-auto relative overflow-hidden group">
+                      <div className="w-full h-full transition-transform duration-500 group-hover:rotate-1 group-hover:scale-105">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover object-left"
+                          loading="lazy"
+                        />
+                      </div>
+
+                      <div className="absolute bottom-4 left-4 z-20">
+                        <span className="inline-block px-3 py-1 text-xs font-semibold text-white bg-black/50 rounded-full backdrop-blur-sm">
+                          {project.tags[0]}
                         </span>
                       </div>
                     </div>

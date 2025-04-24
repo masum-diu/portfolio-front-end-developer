@@ -1,11 +1,15 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
-
+  const router = useRouter();
+  const handleButtonClick = () => {
+    router.push("/projects");
+  };
   // Initialize theme after component mounts
   useEffect(() => {
     setHasMounted(true);
@@ -59,6 +63,7 @@ function Layout({ children }) {
   if (!hasMounted) {
     return null; // or return a loading state
   }
+
   return (
     <div>
       {/* Mobile Menu Button (only visible on small screens) */}
@@ -93,7 +98,11 @@ function Layout({ children }) {
             : ""
         }`}
       >
-        <div className="mb-4 sm:mb-0 flex flex-row sm:flex-col gap-2 sm:gap-0 text-gray-600 dark:text-gray-300">
+        <div
+          onClick={handleButtonClick}
+          style={{ cursor: "pointer" }}
+          className="mb-4 sm:mb-0 flex flex-row sm:flex-col gap-2 sm:gap-0 text-gray-600 dark:text-gray-300"
+        >
           <h1 className="text-sm">Md</h1>
           <h1 className="text-sm">Masum Mollah</h1>
         </div>
@@ -178,10 +187,12 @@ function Layout({ children }) {
 
           {/* Language Selector */}
           <Link
-            href="#"
+            href="/documents/MD-Masum-Mollah12.pdf"
+            download="MD-Masum-Mollah12.pdf"
+            target="_blank"
             className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 flex items-center group"
           >
-            <span className="underline">En</span>
+            <span className="underline">Download Resume</span>
             <svg
               className="w-3 h-3 ml-1 transition-transform group-hover:translate-y-0.5"
               fill="none"
