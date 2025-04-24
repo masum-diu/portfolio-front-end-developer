@@ -98,15 +98,15 @@ function Layout({ children }) {
             : ""
         }`}
       >
-        <div
-          onClick={handleButtonClick}
-          style={{ cursor: "pointer" }}
-          className="mb-4 sm:mb-0 flex flex-row sm:flex-col gap-2 sm:gap-0 text-gray-600 dark:text-gray-300"
-        >
-          <h1 className="text-sm">Md</h1>
-          <h1 className="text-sm">Masum Mollah</h1>
-        </div>
-
+        <Link href="/" onClick={() => setIsMenuOpen(false)}>
+          <div
+            style={{ cursor: "pointer" }}
+            className="mb-4 sm:mb-0 flex flex-row sm:flex-col gap-1 sm:gap-0 text-gray-600 dark:text-gray-300"
+          >
+            <h1 className="text-sm">Md</h1>
+            <h1 className="text-sm">Masum Mollah</h1>
+          </div>
+        </Link>
         {/* Navigation Links - hidden on mobile unless menu is open */}
         <div
           className={`${

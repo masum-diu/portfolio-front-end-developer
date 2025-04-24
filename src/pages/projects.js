@@ -73,6 +73,42 @@ const Projects = () => {
       live: "https://play.google.com/store/apps/details?id=com.ethertech.ryserved_frontend&pcampaignid=web_share",
       image: "/Cover.png",
     },
+    {
+      id: 3,
+      title: "Reserved: Admin Panel for a booking system.",
+      shortDescription:
+        "Reserved: the app offers an Admin Panel for business owners to manage their operations. In the Admin Panel...",
+      fullDescription:
+        "restaurant owners can create and manage their establishments, set availability, and configure all relevant features such as menu offerings, booking times, and promotional deals. It also includes tools for tracking bookings, generating reports, and managing customer interactions, making it a complete solution for both service providers and customers.",
+      tags: ["Next.js", "Context API", "Material UI"],
+      github: "#",
+      live: "http://143.198.219.56:3008/",
+      image: "/UserLogin.png",
+    },
+    {
+      id: 4,
+      title: "United Hospital Ltd: A healthcare medical website",
+      shortDescription:
+        "Developed the intuitive website for United Hospital, providing comprehensive details on departments and doctors, facilitating easy appointment scheduling...",
+      fullDescription:
+        "Users can create accounts for streamlined access to medical reports and personalized healthcare services.Crafted intuitive user interfaces for department selection, doctor appointments, and profile management, enhancing functionality with real-time appointment scheduling, health report access, and emergency service requests.Integrated ERP API and ensured seamless payment processing, significantly improving the user experience on United Hospital's innovative healthcare platform.",
+      tags: ["Next.js", "Context API", "Bootstrap"],
+      github: "#",
+      live: "https://uhlbd.com/",
+      image: "/uhl.png",
+    },
+    {
+      id: 5,
+      title: "Mave CMS: A headless CMS solution for dynamic websites",
+      shortDescription:
+        "Developed front end for the CMS, enabling API generation for dynamic websites, allowing users to effortlessly manage their website front end...",
+      fullDescription:
+        "Empowered users to build custom websites with a headless CMS. Next.js and Ant Design used to build the foundation for a seamless user experience. Craft unique pages, menus, and interactive components (cards, sliders, forms, etc.) for a truly personalized online presence.",
+      tags: ["Next.js", "Context API", "Ant design"],
+      github: "#",
+      live: "https://cms.uurotravels.com/",
+      image: "/dfsdf.PNG",
+    },
     // ... other projects
   ];
 
@@ -186,23 +222,6 @@ const Projects = () => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-12 text-center">
-              <h2 className="text-2xl font-semibold mb-4">More Projects</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                Check out my GitHub profile for more projects, contributions,
-                and open-source work.
-              </p>
-              <Link
-                href="https://github.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-              >
-                <GitHubIcon className="w-5 h-5 mr-2" />
-                View GitHub Profile
-              </Link>
             </div>
           </div>
         </Layout>
