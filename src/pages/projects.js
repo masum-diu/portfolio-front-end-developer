@@ -78,7 +78,7 @@ const Projects = () => {
 
   return (
     <div className="bg-white dark:bg-[#121212] min-h-screen p-4 sm:p-5 transition-colors duration-300">
-      <div className="border border-gray-200 dark:border-[#F5F5F5] max-w-screen-lg mx-auto text-gray-900 dark:text-white rounded-3xl px-4 sm:px-8 md:px-16 py-10">
+      <div className="border border-gray-200 dark:border-[#F5F5F5] max-w-screen-lg mx-auto text-gray-900 dark:text-white rounded-3xl px-4 sm:px-8 md:px-16 py-6">
         <Layout>
           <div className="flex flex-col gap-8 mt-10">
             <div className="text-center">
