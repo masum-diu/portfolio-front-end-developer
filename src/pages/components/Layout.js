@@ -32,7 +32,7 @@ function Layout({ children }) {
 
       {/* Header/Navigation */}
       <div
-        className={`flex flex-col sm:flex-row  items-center p-4 ${
+        className={`flex flex-col sm:flex-row md:justify-between items-center p-4 ${
           isMenuOpen
             ? "fixed inset-0 bg-[#121212] z-40 flex flex-col justify-center items-center"
             : ""
@@ -47,7 +47,7 @@ function Layout({ children }) {
         <div
           className={`${
             isMenuOpen ? "flex" : "hidden"
-          } sm:flex flex-col sm:flex-row gap-5 items-center`}
+          } sm:flex flex-col sm:flex-row gap-5 justify-between items-center`}
         >
           <Link href="#" onClick={() => setIsMenuOpen(false)}>
             <p className="text-sm hover:text-gray-300">About</p>
