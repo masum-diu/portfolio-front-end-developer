@@ -184,18 +184,26 @@ const Home = () => {
                   <span>React Native</span>
                 </p>
               </div>
-              <div className="border border-gray-200 dark:border-[#F5F5F5] rounded-3xl w-full sm:w-[35%] p-4 space-y-2 my-3">
+              <div className="border border-gray-200 dark:border-[#F5F5F5] rounded-3xl w-full sm:w-[40%] p-4 space-y-2 my-3">
                 <p className="text-md font-semibold text-[#808080]">Styles</p>
                 <p className="text-sm font-medium text-black dark:text-[#c3c3c3] flex flex-wrap gap-x-2">
                   <span>Tailwind</span>
                   <span>/</span>
                   <span>Ant.d</span>
                   <span>/</span>
-                  <span>MUI</span>
+                  <span>Bootstrap</span>
                   <span>/</span>
                   <span>Material UI</span>
                 </p>
               </div>
+              {/* <div className="border border-gray-200 dark:border-[#F5F5F5] rounded-3xl w-full sm:w-[70%] p-4 space-y-2">
+                <p className="text-md font-semibold text-[#808080]">Tools</p>
+                <p className="text-sm font-medium text-black dark:text-[#c3c3c3] flex flex-wrap gap-x-2">
+                  <span>Figma</span>
+                  <span>/</span>
+                  <span>Git & Gitbub</span>
+                </p>
+              </div> */}
             </div>
             <img
               className="w-full sm:w-[30%] rounded-3xl"
