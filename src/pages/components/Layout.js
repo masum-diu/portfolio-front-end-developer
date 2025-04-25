@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -211,8 +212,9 @@ function Layout({ children }) {
       </div>
 
       {/* Page Content */}
-      <div className={`${isMenuOpen ? "opacity-25" : ""} transition-opacity`}>
+      <div className={`${isMenuOpen ? "opacity-25" : ""}  transition-opacity`}>
         {children}
+        <ScrollToTopButton />
       </div>
     </div>
   );
