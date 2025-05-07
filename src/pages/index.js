@@ -207,7 +207,7 @@ const Home = () => {
             </div>
             <img
               className="w-full sm:w-[30%] rounded-3xl"
-              src="https://media-sin2-3.cdn.whatsapp.net/v/t61.24694-24/473396488_3393185304156517_6532208735169394453_n.jpg?ccb=11-4&oh=01_Q5Aa1QFEA0hC-MmP_ULLyYbjzfd0hx-aQaI7G8j_fisEBUkLLQ&oe=68172734&_nc_sid=5e03e0&_nc_cat=106"
+              src="/profileimage.jpeg"
               alt="Profile"
             />
           </div>
